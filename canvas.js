@@ -20,7 +20,7 @@ class Statement {
 
 
     draw() {
-        console.log("drawing", this.text, "at", this.rect.x, this.rect.y);
+        // console.log("drawing", this.text, "at", this.rect.x, this.rect.y);
         // ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.beginPath();
         ctx.rect(this.rect.x, this.rect.y, this.rect.width, this.rect.height);
