@@ -96,6 +96,19 @@ document.addEventListener('mouseup', function (e) {
     });
 
 });
+
+
+canvas.addEventListener("dblclick", function (e) {
+    const mouseX = e.clientX - canvas.offsetLeft;
+    const mouseY = e.clientY - canvas.offsetTop;
+
+    const newStatement = new Statement("New statement");
+    newStatement.rect.x = mouseX;
+    newStatement.rect.y = mouseY;
+    statements.push(newStatement);
+    newStatement.draw();
+});
+
 // function draw() {
 //     ctx.clearRect(0, 0, canvas.width, canvas.height);
 //     ctx.beginPath();
